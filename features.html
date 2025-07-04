@@ -1,0 +1,765 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Jul 04 2025 21:21:49 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="686845d3b557281e0127f67f" data-wf-site="686845d2b557281e0127f618" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Features</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/more-fa0bdf.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Space Grotesk:300,regular,500,600,700","DM Sans:100,200,300,regular,500,600,700,800,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.svg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.svg" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.underline {
+  display: inline;
+  background-image: linear-gradient(to right, rgba(119, 19, 188, 0.6), rgba(223, 91, 194, 0.6));
+  background-repeat: no-repeat;
+  background-size: 100% 1rem;/* Full width, 3px tall */
+  background-position: 0 100%; /* At the bottom of the text */
+  backdrop-filter: blur(40px);
+}
+ @media screen and (max-width:960px) {  
+.scroll-y-mobile {
+overflow-x: auto;
+}
+}
+.submit {
+color: inherit;
+}
+.main-wrapper {
+overflow: hidden !important;
+}
+</style>
+      <style>
+  html { font-size: calc(0.75rem + 0.20833333333333331vw); }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.75rem + 0.20833333333333337vw); } }
+  @media screen and (max-width:1440px) { html { font-size: calc(0.75rem + 0.20833333333333331vw); } }
+  @media screen and (max-width:960px) { html { font-size: calc(0.7502598752598753rem + 0.2079002079002079vw); } }
+  @media screen and (max-width:479px) { html { font-size: calc(0.6872384937238494rem + 0.41841004184100417vw); } }
+</style>
+    </div>
+    <main class="main-wrapper">
+      <div class="hero">
+        <div fs-scrolldisable-element="smart-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+          <div class="w-layout-blockcontainer container no-max-widt w-container">
+            <div class="nav-wrp">
+              <a href="#" class="nav-logo w-nav-brand">
+                <div class="text-block">Total- Mind.AI</div>
+              </a>
+              <nav role="navigation" class="nav-menu w-nav-menu">
+                <div class="nav-links-wrp">
+                  <a href="index.html" class="nav-links w-nav-link">Home</a>
+                  <a href="about.html" class="nav-links w-nav-link">About</a>
+                  <a href="features.html" aria-current="page" class="nav-links w-nav-link w--current">Features</a>
+                  <a href="pricing.html" class="nav-links w-nav-link">Pricing</a>
+                  <a href="contact-us.html" class="nav-links w-nav-link">Contact Us</a>
+                  <a href="case-studies.html" class="nav-links w-nav-link">Case Study</a>
+                </div>
+              </nav>
+              <div class="account-links">
+                <a href="log-in.html" class="text-links">Log In</a>
+                <div>|</div>
+                <a href="sign-up.html" class="text-links">Sign Up</a>
+              </div>
+              <div class="menu-button w-nav-button">
+                <div class="menu-icon">
+                  <div class="icon_line-top"></div>
+                  <div class="icon_line-middle">
+                    <div class="rl_menu-icon_line-middle-inner"></div>
+                  </div>
+                  <div class="icon_line-bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="section">
+          <div class="w-layout-blockcontainer container w-container">
+            <div class="content-wrapper">
+              <div class="section-titles">
+                <div class="title">
+                  <div>Latest Additions</div>
+                  <div class="edge bottom-left _12px"></div>
+                  <div class="edge _12px"></div>
+                  <div class="edge bottom-right _12px"></div>
+                  <div class="edge top-right _12px"></div>
+                </div>
+              </div>
+              <h1 class="heading-hero">Our Latest <span class="underline">Ai Features</span></h1>
+              <div class="spacer-small"></div>
+              <div class="w-layout-grid grid-2">
+                <div gsap-anim="large-cards" id="w-node-cc4a98c4-cd98-9a41-2613-0f62478de78c-0127f67f" class="benefits-cards">
+                  <div class="image-overflow"><img src="images/mdi_stopwatch-outline-2.svg" loading="lazy" alt="" class="stop-watch"></div>
+                  <div class="max-width-medium">
+                    <div class="benefits-heading">Utilize real-time data analysis</div>
+                    <div class="spacer-xsmall"></div>
+                    <div class="text">Discover how our AI handles data in real-time for instant results.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="large-cards" id="w-node-_193551a6-232c-3df8-c020-55d919eee211-0127f67f" class="benefits-cards">
+                  <div class="image-overflow"><img src="images/carbon_machine-learning-model-1.svg" loading="lazy" alt="" class="languges-icon"></div>
+                  <div class="max-width-medium">
+                    <div class="benefits-heading">Natural Language</div>
+                    <div class="spacer-xsmall"></div>
+                    <div class="text">Our AI&#x27;s NLP transforms language understanding, enabling natural interactions with chatbots and assistants.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="large-cards" class="benefits-cards">
+                  <div class="image-overflow"><img src="images/fluent-mdl2_machine-learning-3.svg" loading="lazy" alt="" class="neural-img"></div>
+                  <div class="max-width-medium">
+                    <div class="benefits-heading">Machine Learning Capabilities</div>
+                    <div class="spacer-xsmall"></div>
+                    <div class="text">Learn how our AI utilizes machine learning for intelligent decision-making.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="large-cards" class="benefits-cards">
+                  <div class="image-overflow"><img src="images/solar_eye-broken-2.svg" loading="lazy" alt="" class="vision"></div>
+                  <div class="max-width-medium">
+                    <div class="benefits-heading">Computer Vision Technology</div>
+                    <div class="spacer-xsmall"></div>
+                    <div class="text">See how our AI interprets and analyzes visual data.<br></div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+              </div>
+            </div>
+          </div><img src="images/Union.svg" loading="lazy" alt="" class="union">
+          <div class="purple-glow"></div>
+          <div class="glow-wrp center">
+            <div class="purple-glow relative"></div>
+            <div class="pink-glow relative"></div>
+          </div>
+        </section>
+      </div>
+      <section class="section">
+        <div class="w-layout-blockcontainer container max-width-xxlarge w-container">
+          <div class="features-component">
+            <div class="content-wrapper">
+              <div class="section-titles">
+                <div gsap-anim="small-cards" class="title">
+                  <div>Chat</div>
+                  <div class="edge bottom-left _12px"></div>
+                  <div class="edge _12px"></div>
+                  <div class="edge bottom-right _12px"></div>
+                  <div class="edge top-right _12px"></div>
+                </div>
+              </div>
+              <h1 gsap-anim="heading" class="heading max-width-large">AI Chat <span class="underline">Assistant</span></h1>
+              <div gsap-anim="text" class="text _1-125rem">Your smart, always-available chatbot that can answer questions, hold conversations, and support users like a real team member.<br></div>
+            </div>
+            <div gsap-anim="large-cards" id="w-node-db689303-5b38-b7a8-22b6-bd4d48dbd42a-0127f67f" class="relative">
+              <div class="glow-overflow">
+                <div class="purple-glow top-right"></div>
+                <div class="pink-glow"></div>
+              </div>
+              <div class="feature-large-cards">
+                <div class="edge"></div>
+                <div class="edge top-right"></div>
+                <div class="edge bottom-right"></div>
+                <div class="edge bottom-left"></div><img src="images/ri_ai-generate-2.svg" loading="lazy" alt="" class="feature-large-images">
+                <div class="text _1-125rem">AI Dialogue System: Engage in seamless and interactive conversations with our advanced AI tool, designed to enhance user interaction and satisfaction.</div>
+              </div>
+            </div>
+          </div>
+          <div class="spacer-xxhuge"></div>
+          <div class="features-component reverse">
+            <div gsap-anim="large-cards" id="w-node-_2bd80799-454b-c08a-0383-5d3b8b0795e6-0127f67f" class="relative">
+              <div class="feature-large-cards">
+                <div class="edge"></div>
+                <div class="edge top-right"></div>
+                <div class="edge bottom-right"></div>
+                <div class="edge bottom-left"></div><img src="images/ri_code-ai-fill.svg" loading="lazy" alt="" class="feature-large-images">
+                <div class="text _1-125rem">Transform your ideas into code instantly. Whether it&#x27;s a website, script, or automation, our AI can write, debug, and explain code efficiently.</div>
+              </div>
+              <div class="glow-overflow">
+                <div class="purple-glow top-right"></div>
+                <div class="pink-glow"></div>
+              </div>
+            </div>
+            <div class="content-wrapper">
+              <div class="section-titles">
+                <div gsap-anim="smal-cards" class="title">
+                  <div>Code</div>
+                  <div class="edge bottom-left _12px"></div>
+                  <div class="edge _12px"></div>
+                  <div class="edge bottom-right _12px"></div>
+                  <div class="edge top-right _12px"></div>
+                </div>
+              </div>
+              <h1 gsap-anim="heading" class="heading max-width-large">AI <span class="underline">Programmer</span></h1>
+              <div gsap-anim="text" class="text _1-125rem">Turn ideas into code — instantly. Whether it’s a website, script, or automation, your AI can write, debug, and explain code.<br></div>
+            </div>
+          </div>
+          <div class="spacer-xxhuge"></div>
+          <div class="features-component">
+            <div class="content-wrapper">
+              <div class="section-titles">
+                <div gsap-anim="small-cards" class="title">
+                  <div>Task</div>
+                  <div class="edge bottom-left _12px"></div>
+                  <div class="edge _12px"></div>
+                  <div class="edge bottom-right _12px"></div>
+                  <div class="edge top-right _12px"></div>
+                </div>
+              </div>
+              <h1 gsap-anim="heading" class="heading max-width-large">AI <span class="underline">Task Manager</span></h1>
+              <div gsap-anim="text" class="text _1-125rem">Organize, automate, and manage your digital life. Track tasks, and handle routine operations — all hands-free.<br></div>
+            </div>
+            <div gsap-anim="large-cards" id="w-node-a341b3c0-f38f-7cd6-db8d-de4460cc9e7e-0127f67f" class="relative">
+              <div class="feature-large-cards">
+                <div class="edge"></div>
+                <div class="edge top-right"></div>
+                <div class="edge bottom-right"></div>
+                <div class="edge bottom-left"></div><img src="images/mdi_paper-edit-outline.svg" loading="lazy" alt="" class="feature-large-images">
+                <div class="text _1-125rem">Effortlessly organize, automate, and manage your digital life. Keep track of tasks and handle routine operations without lifting a finger.</div>
+              </div>
+              <div class="glow-overflow">
+                <div class="purple-glow top-right"></div>
+                <div class="pink-glow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glow-wrp"><img src="images/Union-1.svg" loading="lazy" alt="" class="union top-left"></div>
+      </section>
+      <section class="section overflow-hidden">
+        <div class="w-layout-blockcontainer container w-container">
+          <div class="content-wrapper center">
+            <div class="section-titles">
+              <div gsap-anim="small-cards" class="title">
+                <div>Integrations</div>
+                <div class="edge bottom-left _12px"></div>
+                <div class="edge _12px"></div>
+                <div class="edge bottom-right _12px"></div>
+                <div class="edge top-right _12px"></div>
+              </div>
+            </div>
+            <h4 gsap-anim="heading" class="heading max-width-large">Connect Total Mind to your favourite <span class="underline">Workflow</span></h4>
+            <div class="spacer-small"></div>
+            <div class="div-block-9"><img src="images/Group-10.svg" loading="lazy" alt="" class="bg-grid-img large">
+              <div class="w-layout-grid grid">
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/svgexport-25.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">Slack</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Integrate Slack for better team collaboration.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/svgexport-20.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">Discord</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Connect with Discord to enhance community engagement.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/svgexport-21.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">Github</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Streamline project management with GitHub integration.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/svgexport-23.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">Chrome</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Boost productivity with Chrome integration effortlessly.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+              </div>
+              <div class="w-layout-grid grid">
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/twitter-1.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">X</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Enhance your social media presence with seamless integration.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/svgexport-19.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">Amazon</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Enhance Amazon efficiency and productivity.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+                <div gsap-anim="small-cards" class="integration-card"><img src="images/svgexport-26-1.svg" loading="lazy" alt="">
+                  <div>
+                    <div class="text _1-5rem-space_growtesk">Paypal</div>
+                    <div class="spacer-tiny"></div>
+                    <div class="text _875rem-in_tab">Streamline payments with seamless PayPal integration.</div>
+                  </div>
+                  <div class="edge"></div>
+                  <div class="edge top-right"></div>
+                  <div class="edge bottom-right"></div>
+                  <div class="edge bottom-left"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="w-layout-blockcontainer container is-footer w-container">
+          <div class="footer-wrapper">
+            <div class="footer-content">
+              <div class="spacer-tiny hide-tablet"></div>
+              <div class="footer-block">
+                <div class="footer-title">Pages</div>
+                <div class="footer-horizantal-wrp">
+                  <a href="index.html" class="footer-link">Home</a>
+                  <a href="about.html" class="footer-link">About</a>
+                  <a href="features.html" aria-current="page" class="footer-link w--current">Features</a>
+                  <a href="pricing.html" class="footer-link">Pricing</a>
+                  <a href="contact-us.html" class="footer-link">Contact Us</a>
+                  <a href="case-studies.html" class="footer-link">Case-Study</a>
+                </div>
+              </div>
+              <div class="spacer-tiny"></div>
+              <div class="footer-block">
+                <div class="footer-horizantal-wrp">
+                  <div class="footer-block">
+                    <div class="footer-title _1-2">LOCATION</div>
+                    <div class="footer-title _1-2">phone no.<br></div>
+                    <div class="footer-title _1-2">contact<br></div>
+                    <div class="footer-title _1-2">support<br></div>
+                  </div>
+                  <div class="footer-block">
+                    <div class="footer-title small">New York, usa</div>
+                    <a href="#" class="footer-link w-inline-block">
+                      <div class="footer-title small">+1 123 456 7890</div>
+                    </a>
+                    <a href="#" class="footer-link w-inline-block">
+                      <div class="footer-title small">contact@totalmind.ai<br></div>
+                    </a>
+                    <a href="#" class="footer-link w-inline-block">
+                      <div class="footer-title small">Help@totalmind.ai<br></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-block">
+              <div class="footer-block align-right hide-tablet">
+                <a href="sign-up.html" class="footer-brand w-inline-block">
+                  <h1 class="header-footer">Sign up now</h1>
+                </a>
+                <div class="footer-divider small"></div>
+                <div class="text _875rem">Cutting-edge AI solutions crafted to boost user interaction and satisfaction.</div>
+              </div>
+              <div class="spacer-xlarge hide-tablet"></div>
+              <div class="footer-horizantal-wrp space-between">
+                <div class="footer-block">
+                  <div class="footer-title">Socials</div>
+                  <a href="#" class="footer-link w-inline-block">
+                    <div class="social-icons x-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 14 14" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                        <g clip-path="url(#clip0_135_128)">
+                          <mask id="mask0_135_128" style="mask-type:luminance" maskunits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                            <path d="M0 0H14V14H0V0Z" fill="currentColor"></path>
+                          </mask>
+                          <g mask="url(#mask0_135_128)">
+                            <path d="M11.025 0.655762H13.172L8.482 6.02976L14 13.3438H9.68L6.294 8.90876L2.424 13.3438H0.275L5.291 7.59376L0 0.656762H4.43L7.486 4.70976L11.025 0.655762ZM10.27 12.0558H11.46L3.78 1.87676H2.504L10.27 12.0558Z" fill="currentColor"></path>
+                          </g>
+                        </g>
+                        <defs>
+                          <clippath id="clip0_135_128">
+                            <rect width="14" height="14" fill="currentColor"></rect>
+                          </clippath>
+                        </defs>
+                      </svg></div>
+                    <div class="footer-link _1-4rem">X.com</div>
+                  </a>
+                  <a href="#" class="footer-link w-inline-block">
+                    <div class="social-icons w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                        <path d="M20 22H18.33C17.7996 22 17.2909 21.7893 16.9158 21.4142C16.5407 21.0391 16.33 20.5304 16.33 20V14.63C16.3389 14.4194 16.2753 14.2121 16.1497 14.0428C16.0241 13.8735 15.8442 13.7525 15.64 13.7C15.5212 13.6819 15.4 13.6895 15.2844 13.7223C15.1688 13.7551 15.0616 13.8123 14.97 13.89C14.8757 13.97 14.8 14.0696 14.7482 14.1819C14.6964 14.2941 14.6697 14.4164 14.67 14.54V20C14.67 20.5304 14.4593 21.0391 14.0842 21.4142C13.7091 21.7893 13.2004 22 12.67 22H11C10.4696 22 9.96086 21.7893 9.58579 21.4142C9.21072 21.0391 9 20.5304 9 20V14.54C9 12.8161 9.68482 11.1628 10.9038 9.94381C12.1228 8.72482 13.7761 8.04 15.5 8.04C17.2239 8.04 18.8772 8.72482 20.0962 9.94381C21.3152 11.1628 22 12.8161 22 14.54V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22ZM15.5 11.69C15.6565 11.6808 15.8135 11.6808 15.97 11.69C16.6414 11.8191 17.2458 12.1806 17.6774 12.7108C18.1089 13.2411 18.34 13.9064 18.33 14.59V20H20V14.54C20 13.3465 19.5259 12.2019 18.682 11.358C17.8381 10.5141 16.6935 10.04 15.5 10.04C14.3065 10.04 13.1619 10.5141 12.318 11.358C11.4741 12.2019 11 13.3465 11 14.54V20H12.67V14.54C12.67 13.7876 12.9675 13.0657 13.4977 12.5318C14.0278 11.9979 14.7476 11.6953 15.5 11.69ZM6 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V10C2 9.46957 2.21071 8.96086 2.58579 8.58579C2.96086 8.21072 3.46957 8 4 8H6C6.53043 8 7.03914 8.21072 7.41422 8.58579C7.78929 8.96086 8 9.46957 8 10V20C8 20.5304 7.78929 21.0391 7.41422 21.4142C7.03914 21.7893 6.53043 22 6 22ZM4 10V20H6V10H4ZM5 7C4.40666 7 3.82664 6.82405 3.33329 6.49441C2.83994 6.16477 2.45543 5.69623 2.22836 5.14805C2.0013 4.59987 1.94189 3.99667 2.05765 3.41473C2.1734 2.83279 2.45912 2.29824 2.87868 1.87868C3.29824 1.45912 3.83279 1.1734 4.41473 1.05765C4.99667 0.94189 5.59987 1.0013 6.14805 1.22836C6.69623 1.45543 7.16477 1.83994 7.49441 2.33329C7.82405 2.82664 8 3.40666 8 4C8 4.79565 7.68393 5.55871 7.12132 6.12132C6.55871 6.68393 5.79565 7 5 7ZM5 3C4.80222 3 4.60888 3.05865 4.44443 3.16853C4.27998 3.27841 4.15181 3.43459 4.07612 3.61732C4.00043 3.80004 3.98063 4.00111 4.01922 4.19509C4.0578 4.38907 4.15304 4.56726 4.29289 4.70711C4.43275 4.84696 4.61093 4.9422 4.80491 4.98079C4.99889 5.01937 5.19996 4.99957 5.38268 4.92388C5.56541 4.84819 5.72159 4.72002 5.83147 4.55557C5.94135 4.39112 6 4.19778 6 4C6 3.73478 5.89464 3.48043 5.70711 3.29289C5.51957 3.10536 5.26522 3 5 3Z" fill="currentColor"></path>
+                      </svg></div>
+                    <div class="footer-link _1-4rem">linkedin</div>
+                  </a>
+                  <a href="#" class="footer-link w-inline-block">
+                    <div class="social-icons w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                        <path d="M5.88421 18.6531C5.58421 18.4531 5.32621 18.1981 5.02421 17.8371C4.86747 17.6452 4.71213 17.4522 4.55821 17.2581C4.09521 16.6831 3.80321 16.4171 3.50221 16.3081C3.37556 16.2662 3.25858 16.1994 3.15815 16.1115C3.05772 16.0237 2.97588 15.9167 2.91745 15.7968C2.85901 15.6768 2.82516 15.5464 2.81789 15.4132C2.81062 15.28 2.83008 15.1467 2.87512 15.0211C2.92016 14.8956 2.98986 14.7803 3.08014 14.6821C3.17041 14.5838 3.27943 14.5047 3.40076 14.4492C3.5221 14.3938 3.6533 14.3632 3.78665 14.3592C3.91999 14.3552 4.05279 14.378 4.17721 14.4261C4.92921 14.6961 5.43821 15.1611 6.12421 16.0141C6.03021 15.8971 6.46421 16.4411 6.55721 16.5531C6.74721 16.7801 6.88721 16.9181 6.99721 16.9911C7.20121 17.1281 7.58521 17.1871 8.14721 17.1311C8.17121 16.7491 8.24121 16.3781 8.34921 16.0361C5.38121 15.3101 3.70121 13.3961 3.70121 9.6401C3.70121 8.4001 4.07121 7.2841 4.75921 6.3481C4.54121 5.4541 4.57421 4.3731 5.06121 3.1561C5.11647 3.01844 5.20168 2.89479 5.31064 2.79413C5.41961 2.69347 5.5496 2.61831 5.69121 2.5741C5.77221 2.5501 5.81821 2.5391 5.89921 2.5271C6.70221 2.4031 7.83621 2.6971 9.31421 3.6231C10.195 3.41691 11.0966 3.31355 12.0012 3.3151C12.9132 3.3151 13.8202 3.4191 14.6852 3.6231C16.1622 2.6901 17.2992 2.3961 18.1072 2.5271C18.1925 2.54044 18.2652 2.5571 18.3252 2.5771C18.464 2.62288 18.5911 2.69854 18.6976 2.79874C18.804 2.89895 18.8872 3.02128 18.9412 3.1571C19.4282 4.3731 19.4612 5.4531 19.2432 6.3471C19.9342 7.2831 20.3012 8.3921 20.3012 9.6401C20.3012 13.3971 18.6272 15.3051 15.6592 16.0321C15.7842 16.4471 15.8492 16.9101 15.8492 17.4121C15.8492 18.0771 15.8472 18.7111 15.8422 19.4221C15.8422 19.6121 15.8402 19.8161 15.8372 20.1281C16.0618 20.177 16.2627 20.3017 16.4061 20.4814C16.5495 20.661 16.6266 20.8846 16.6245 21.1144C16.6224 21.3443 16.5412 21.5664 16.3945 21.7433C16.2478 21.9203 16.0447 22.0414 15.8192 22.0861C14.6792 22.3131 13.8352 21.5541 13.8352 20.5611L13.8372 20.1141L13.8422 19.4091C13.8472 18.7021 13.8502 18.0721 13.8502 17.4121C13.8502 16.7151 13.6662 16.2601 13.4242 16.0511C12.7632 15.4811 13.0982 14.3971 13.9652 14.3001C16.9312 13.9671 18.3012 12.8181 18.3012 9.6401C18.3012 8.6851 17.9892 7.8961 17.3882 7.2361C17.2617 7.09704 17.177 6.92515 17.1438 6.74014C17.1105 6.55513 17.1301 6.3645 17.2002 6.1901C17.3662 5.7761 17.4362 5.2331 17.2952 4.5761L17.2852 4.5791C16.7942 4.7181 16.1752 5.0191 15.4272 5.5281C15.3066 5.60996 15.1695 5.66445 15.0256 5.68777C14.8818 5.71109 14.7345 5.70267 14.5942 5.6631C13.7502 5.42907 12.8781 5.31165 12.0022 5.3141C11.1122 5.3141 10.2302 5.4321 9.41021 5.6641C9.27057 5.70321 9.12411 5.71148 8.98096 5.68834C8.83781 5.6652 8.70141 5.61121 8.58121 5.5301C7.82821 5.0231 7.20721 4.7231 6.71121 4.5831C6.56821 5.2361 6.63921 5.7771 6.80421 6.1901C6.87401 6.36446 6.89331 6.55495 6.85988 6.73976C6.82646 6.92458 6.74166 7.09624 6.61521 7.2351C6.01821 7.8901 5.70221 8.6931 5.70221 9.6391C5.70221 12.8111 7.07321 13.9671 10.0242 14.2991C10.8892 14.3961 11.2262 15.4761 10.5692 16.0471C10.3762 16.2151 10.1392 16.7791 10.1392 17.4111V20.5611C10.1392 21.5461 9.30521 22.2861 8.17921 22.0891C7.95097 22.049 7.74374 21.9309 7.59292 21.755C7.44211 21.5791 7.35707 21.3562 7.35235 21.1245C7.34763 20.8929 7.42351 20.6667 7.56703 20.4848C7.71055 20.3029 7.9128 20.1764 8.13921 20.1271V19.1371C7.22921 19.1981 6.47821 19.0491 5.88521 18.6521" fill="currentColor"></path>
+                      </svg></div>
+                    <div class="footer-link _1-4rem">Github</div>
+                  </a>
+                </div>
+                <div class="footer-block text-align-right">
+                  <div class="footer-title">Utlities</div>
+                  <a href="utilities/instructions.html" class="footer-link">Instrustions</a>
+                  <a href="utilities/licences.html" class="footer-link">Licences</a>
+                  <a href="utilities/style-guide.html" class="footer-link">Style Guide</a>
+                  <a href="utilities/changelog.html" class="footer-link">Changelog</a>
+                  <a href="401.html" class="footer-link">Password Protected</a>
+                  <a href="404.html" class="footer-link">404 Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-divider"></div>
+          <div class="div-block-14">
+            <div class="text">© 2025 Total Mind AI. All rights reserved.</div>
+            <div class="footer-horizantal-wrp _5">
+              <div class="footer-title small">Site By:<br></div>
+              <a href="https://pixybits.com" class="footer-link">PIXYBITS</a>
+            </div>
+          </div>
+        </div>
+        <div class="glow-wrp">
+          <div class="purple-glow"></div>
+          <div class="pink-glow top-left"></div>
+        </div>
+        <div class="footer-overlay"></div>
+      </section>
+    </main>
+  </div>
+  <div class="template-market-badge"><img src="images/Group-1000002507-2_1Group-1000002507-2.avif" loading="lazy" alt="" class="pixybits-logo">
+    <div class="w-layout-vflex">
+      <a href="https://webflow.com/made-in-webflow/website/total-mind" target="_blank" class="template-links">Copy this template</a>
+      <a href="https://webflow.com/templates/designers/pixybits" target="_blank" class="template-links">View all templates</a>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=686845d2b557281e0127f618" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/SplitText.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollSmoother.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrambleTextPlugin.min.js" type="text/javascript"></script>
+  <script type="text/javascript">gsap.registerPlugin(SplitText,ScrollTrigger,ScrollSmoother,ScrambleTextPlugin);</script><!--  GSAP + ScrollTrigger + ScrollSmoother  -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    ScrollSmoother.create({
+      wrapper: ".page-wrapper",   // the fixed wrapper
+      content: ".main-wrapper",   // the scrollable content
+      smooth: 1.2,                // scroll speed
+      effects: true               // allow parallax-like animations via data-speed
+    });
+  });
+</script>
+  <script>
+// ========================================================
+// ✨ GSAP ScrollTrigger Animation System
+// ========================================================
+// -------------------- 🎛 Configuration --------------------
+const scrollStart = "top 85%"; // When animation enters viewport
+const scrollOutStart = "top 200%"; // When reset begins (smooth scroll out)
+const textY = 32,
+   textDuration = 0.8,
+   textEase = "power2.out";
+const headingY = 60,
+   headingDuration = 1,
+   headingEase = "power2.out";
+const ctaScale = 0.9,
+   ctaDuration = 1,
+   ctaEase = "back.out(1.7)";
+const largeCardY = 100,
+   largeCardDuration = 1.2,
+   largeCardEase = "power2.out",
+   largeCardOutDuration = 0.6;
+const largeCardStagger = 0.15;
+const smallCardY = 50,
+   smallCardDuration = 1,
+   smallCardEase = "power2.out",
+   smallCardStagger = 0.15;
+const cardSlideX = 80,
+   cardSlideDuration = 1,
+   cardSlideEase = "power2.out";
+// -------------------- 🗺 Animation Map --------------------
+const animationMap = {
+   text: () => ({
+      from: { opacity: 0, y: textY },
+      to: { opacity: 1, y: 0, duration: textDuration, ease: textEase },
+   }),
+   heading: () => ({
+      from: { opacity: 0, y: headingY },
+      to: { opacity: 1, y: 0, duration: headingDuration, ease: headingEase },
+   }),
+   cta: () => ({
+      from: { opacity: 0, scale: ctaScale },
+      to: { opacity: 1, scale: 1, duration: ctaDuration, ease: ctaEase },
+   }),
+   "large-cards": (el, i) => ({
+      from: { opacity: 0, y: largeCardY },
+      to: { opacity: 1, y: 0, duration: largeCardDuration, ease: largeCardEase },
+      scrollOut: {
+         y: largeCardY,
+         opacity: 0,
+         duration: largeCardOutDuration,
+         ease: "power2.inOut",
+      },
+   }),
+   "small-cards": (el, i) => ({
+      from: { opacity: 0, y: smallCardY },
+      to: { opacity: 1, y: 0, duration: smallCardDuration, ease: smallCardEase },
+   }),
+   "card-slide-left": () => ({
+      from: { opacity: 0, x: cardSlideX },
+      to: { opacity: 1, x: 0, duration: cardSlideDuration, ease: cardSlideEase },
+   }),
+};
+// -------------------- 🧠 Group Elements by Row --------------------
+function groupByRow(elements) {
+   const rows = [];
+   const threshold = 5; // Pixel threshold for grouping into a row
+   elements.forEach((el) => {
+      const top = el.getBoundingClientRect().top;
+      let row = rows.find((r) => Math.abs(r.top - top) < threshold);
+      if (!row) {
+         row = { top, items: [] };
+         rows.push(row);
+      }
+      row.items.push(el);
+   });
+   return rows;
+}
+// -------------------- 🚀 Initialization --------------------
+document.addEventListener("DOMContentLoaded", () => {
+   gsap.registerPlugin(ScrollTrigger);
+   const allElements = Array.from(document.querySelectorAll("[gsap-anim]"));
+   const groupedByRow = groupByRow(allElements);
+   const cardTypes = ["large-cards", "small-cards"];
+   groupedByRow.forEach((row) => {
+      // Sort left to right
+      row.items.sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
+      const cardItems = row.items.filter((el) => cardTypes.includes(el.getAttribute("gsap-anim")));
+      const nonCardItems = row.items.filter(
+         (el) => !cardTypes.includes(el.getAttribute("gsap-anim"))
+      );
+      // -------------------- 🃏 Card Animations --------------------
+      cardItems.forEach((el, i) => {
+         const type = el.getAttribute("gsap-anim");
+         const anim = animationMap[type];
+         if (!anim) return;
+         const { from, to, scrollOut } = anim(el, i);
+         const delay = i * (type === "large-cards" ? largeCardStagger : smallCardStagger);
+         gsap.set(el, from); // Set initial state
+         ScrollTrigger.create({
+            trigger: el,
+            start: scrollStart,
+            end: scrollOutStart,
+            onEnter: () => gsap.to(el, { ...to, delay }),
+            onLeaveBack: () =>
+               scrollOut
+                  ? gsap.to(el, scrollOut)
+                  : gsap.to(el, { ...from, duration: 0.4, ease: "power2.out" }), // Smooth fallback
+         });
+      });
+      // -------------------- 🔤 Non-Card Animations --------------------
+      nonCardItems.forEach((el) => {
+         const type = el.getAttribute("gsap-anim");
+         const anim = animationMap[type];
+         if (!anim) return;
+         const { from, to, scrollOut } = anim(el, 0);
+         gsap.set(el, from); // Set initial state
+         ScrollTrigger.create({
+            trigger: el,
+            start: scrollStart,
+            end: scrollOutStart,
+            onEnter: () => gsap.to(el, to),
+            onLeaveBack: () =>
+               scrollOut
+                  ? gsap.to(el, scrollOut)
+                  : gsap.to(el, { ...from, duration: 0.4, ease: "power2.out" }),
+         });
+      });
+   });
+});
+</script>
+</body>
+</html>
